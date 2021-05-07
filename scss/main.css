@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.table {
+  cursor: text;
+}
+
+.cell-country {
+  background-color: #0000000A;
+  cursor: default;
+}
+
+.cell-year {
+  background-color: #0000000A;
+  cursor: default;
+}
+/*# sourceMappingURL=main.css.map */
