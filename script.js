@@ -23,13 +23,25 @@ var gridOptions = {
     let ColumnHeader = JSON.stringify(event.colDef.field);
     let ColumnHeaderWithoutQuotes = JSON.parse(ColumnHeader);
     if (ColumnHeaderWithoutQuotes === 'country' || ColumnHeaderWithoutQuotes === 'year') {
-      alert(ColumnHeader.toUpperCase() + "cannot be change!");
+        document.getElementById("show-table-header").innerHTML = ColumnHeader.toUpperCase() + "cannot be change!" ;
+        $('.hover_bg_layout').show();
+      // alert(ColumnHeader.toUpperCase() + "cannot be change!");
     }
     else {
       console.log('cell is editable' + ColumnHeader);
     }
   }
 };
+
+$(window).load(function () {
+  
+  $('.hover_bg_layout').click(function(){
+      $('.hover_bg_layout').hide();
+  });
+  $('.popupCloseButton').click(function(){
+      $('.hover_bg_layout').hide();
+  });
+});
 
 
 function getDatePicker() {
